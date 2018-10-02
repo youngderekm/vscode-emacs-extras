@@ -8,3 +8,6 @@ package:
     - su node -c "npm install"
     - su node -c "npm run vscode:prepublish"
     - su node -c "vsce package"
+  artifacts:
+    paths:
+      - emacs-extras-*.vsix
