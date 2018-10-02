@@ -1,6 +1,5 @@
-# emacs-extras README
+# emacs-extras
 
-This is the README for your extension "emacs-extras". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
