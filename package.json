@@ -4,6 +4,10 @@
     "description": "A few extra emacs style commands and key bindings.",
     "version": "0.0.1",
     "publisher": "DerekYoung",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/dyps/emacs-extras",
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
