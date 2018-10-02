@@ -5,8 +5,6 @@ before_script:
 
 package:
   script:
-    - su node
-    - whoami
-    - npm install
-    - npm run vscode:prepublish
-    - vsce package
+    - su node -c "npm install"
+    - su node -c "npm run vscode:prepublish"
+    - su node -c "vsce package"
