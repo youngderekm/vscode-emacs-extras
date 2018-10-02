@@ -6,4 +6,5 @@ before_script:
 package:
   script:
     - npm install
+    - npm run vscode:prepublish
     - vsce package
