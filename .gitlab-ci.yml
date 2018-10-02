@@ -1,4 +1,4 @@
-image: "node:10.7.0"
+#image: "node:10.7.0"
 
 before_script:
   - npm install -g vsce
@@ -6,6 +6,7 @@ before_script:
 package:
   script:
     - su node
+    - whoami
     - npm install
     - npm run vscode:prepublish
     - vsce package
