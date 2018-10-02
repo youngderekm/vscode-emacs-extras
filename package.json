@@ -6,7 +6,7 @@
     "publisher": "DerekYoung",
     "repository": {
         "type": "git",
-        "url": "https://gitlab.com/dyps/emacs-extras",
+        "url": "https://gitlab.com/dyps/emacs-extras"
     },
     "engines": {
         "vscode": "^1.27.0"
