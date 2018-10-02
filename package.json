@@ -2,7 +2,7 @@
     "name": "emacs-extras",
     "displayName": "emacs-extras",
     "description": "A few extra emacs style commands and key bindings.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "DerekYoung",
     "repository": {
         "type": "git",
