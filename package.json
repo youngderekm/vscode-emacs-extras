@@ -1,0 +1,61 @@
+{
+    "name": "emacs-extras",
+    "displayName": "emacs-extras",
+    "description": "A few extra emacs style commands and key bindings.",
+    "version": "0.0.1",
+    "publisher": "DerekYoung",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:emacsExtras.cutToEndOfLine",
+        "onCommand:emacsExtras.scrollLineToCenter"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "emacsExtras.cutToEndOfLine",
+                "title": "Cut to end of line"
+            },
+            {
+                "command": "emacsExtras.scrollLineToCenter",
+                "title": "Scroll line to center"
+            }
+        ],
+        "keybindings": [
+            {
+                "key": "ctrl+k",
+                "command": "emacsExtras.cutToEndOfLine",
+                "when": "textInputFocus && !editorReadonly"
+            },
+            {
+                "key": "ctrl+l",
+                "command": "emacsExtras.scrollLineToCenter",
+                "when": "editorFocus"
+            },
+            {
+                "key": "ctrl+y",
+                "command": "editor.action.clipboardPasteAction",
+                "when": "textInputFocus && !editorReadonly"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
