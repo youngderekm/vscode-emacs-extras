@@ -63,7 +63,6 @@ class KillState {
             if (beginningOfNextLine.line < editor.document.lineCount) {
                 // not at the final line of the document, so OK to cut
                 this.cutSelection(editor, repeatKill, new vscode.Selection(position, beginningOfNextLine));
-                //vscode.commands.executeCommand("editor.action.clipboardCutAction");
             }
         }
     }
