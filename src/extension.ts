@@ -1,12 +1,14 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import cutToEndOfLine from "./cut-to-end-of-line";
+import KillState from "./cut-to-end-of-line";
 import scrollLineToCenter from "./scroll-line-to-center";
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let cutToEndOfLineDisposable = vscode.commands.registerCommand("emacsExtras.cutToEndOfLine", cutToEndOfLine);
+    const killState = new KillState();
+
+    let cutToEndOfLineDisposable = vscode.commands.registerCommand("emacsExtras.cutToEndOfLine", killState.cutToEndOfLine);
     context.subscriptions.push(cutToEndOfLineDisposable);
 
     let scrollLineToCenterDisposable = vscode.commands.registerCommand("emacsExtras.scrollLineToCenter", scrollLineToCenter);
