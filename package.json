@@ -2,7 +2,7 @@
     "name": "emacs-extras",
     "displayName": "emacs-extras",
     "description": "A few extra emacs style commands and key bindings.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "DerekYoung",
     "repository": {
         "type": "git",
@@ -45,6 +45,16 @@
                 "key": "ctrl+y",
                 "command": "editor.action.clipboardPasteAction",
                 "when": "textInputFocus && !editorReadonly"
+            },
+            {
+                "key": "ctrl-v",
+                "command": "cursorPageDown",
+                "when": "editorTextFocus && !suggestWidgetVisible"
+            },
+            {
+                "key": "alt+v",
+                "command": "cursorPageUp",
+                "when": "editorTextFocus && !suggestWidgetVisible"
             }
         ]
     },
