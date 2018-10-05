@@ -2,18 +2,17 @@
     "name": "vscode-emacs-extras",
     "displayName": "Emacs Extras",
     "description": "A few extra emacs style commands and key bindings.",
-    "version": "0.0.5",
-    "publisher": "DerekYoung",
+    "version": "0.1.0",
+    "publisher": "youngderekm",
     "repository": {
         "type": "git",
-        "url": "https://gitlab.com/dyps/emacs-extras"
+        "url": "https://github.com/youngderekm/vscode-emacs-extras"
     },
     "engines": {
         "vscode": "^1.27.0"
     },
     "categories": [
         "Other",
-        "Keymaps"
     ],
     "keywords": [
         "emacs",
