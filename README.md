@@ -1,22 +1,15 @@
-# emacs-extras
+# vscode-emacs-extras
 
+The Emacs Extras plugin adds a few small missing Emacs commands to Visual Studio Code.  It does not try to remap everything to Emacs style key bindings, only adding a few commands that make VS Code easier to use for longtime Emacs users.
 
-## Features
-
-The emacs-extras plugin adds a few small missing emacs commands to VS Code.  It does not try to remap everything to emacs style key bindings.
+## Commands
 
 This currently adds the following commands
-- `C-k` cut to end of line
+- `C-k` cut/kill to end of line (Emacs style.  Repeated kills append to the previous kill)
 - `C-l` center on current line
-- `C-y` paste
+- `C-y` paste (yank)
 - `C-v` page down
 - `M-v` page up
-
-## Extension Settings
-
-
-This extension contributes the following settings:
-
-* `emacsExtras.cutToEndOfLine`: cut to end of line
-* `emacsExtras.scrollLineToCenter`: center on current line
+- `emacsExtras.cutToEndOfLine`: cut/kill to end of line
+- `emacsExtras.scrollLineToCenter`: center on current line
 

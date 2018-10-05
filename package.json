@@ -1,8 +1,8 @@
 {
-    "name": "emacs-extras",
-    "displayName": "emacs-extras",
+    "name": "vscode-emacs-extras",
+    "displayName": "Emacs Extras",
     "description": "A few extra emacs style commands and key bindings.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "DerekYoung",
     "repository": {
         "type": "git",
@@ -12,7 +12,16 @@
         "vscode": "^1.27.0"
     },
     "categories": [
-        "Other"
+        "Other",
+        "Keymaps"
+    ],
+    "keywords": [
+        "emacs",
+        "shortcuts",
+        "keybindings",
+        "behavior",
+        "selection",
+        "kill"
     ],
     "activationEvents": [
         "onCommand:emacsExtras.cutToEndOfLine",
@@ -23,7 +32,7 @@
         "commands": [
             {
                 "command": "emacsExtras.cutToEndOfLine",
-                "title": "Cut to end of line"
+                "title": "Cut/kill to end of line"
             },
             {
                 "command": "emacsExtras.scrollLineToCenter",
