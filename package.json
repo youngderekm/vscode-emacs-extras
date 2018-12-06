@@ -50,7 +50,7 @@
             },
             {
                 "key": "ctrl+y",
-                "command": "editor.action.clipboardPasteAction",
+                "command": "emacsExtras.paste",
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
