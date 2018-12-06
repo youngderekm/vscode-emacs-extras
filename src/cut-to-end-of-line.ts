@@ -26,7 +26,7 @@ class KillState {
         this.killBuffer += text;
 
         // copy the kill buffer to the clipboard
-        clip.write(this.killBuffer);
+        clip.writeSync(this.killBuffer);
 
         // delete the selection, then clear it.
         editor.edit(editBuilder => {
