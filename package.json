@@ -52,7 +52,7 @@
                 "key": "ctrl+y",
                 "command": "editor.action.clipboardPasteAction",
                 "when": "editorTextFocus && !editorReadonly"
-            }
+            },
             {
                 "key": "ctrl-v",
                 "command": "cursorPageDown",
