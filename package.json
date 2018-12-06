@@ -62,7 +62,6 @@
                 "key": "alt+v",
                 "command": "cursorPageUp",
                 "when": "editorTextFocus && !suggestWidgetVisible"
-emacs
             }
         ]
     },
