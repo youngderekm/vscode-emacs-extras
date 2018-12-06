@@ -2,7 +2,7 @@
     "name": "vscode-emacs-extras",
     "displayName": "Emacs Extras",
     "description": "A few extra emacs style commands and key bindings.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "youngderekm",
     "repository": {
         "type": "git",
